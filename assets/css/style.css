@@ -554,3 +554,59 @@ input:focus, textarea:focus{border-color: rgba(214,184,172,.55)}
     font-size: clamp(44px, 10vw, 64px);
   }
 }
+
+/* 1. Le Conteneur Parent : Active le mode Flexbox */
+.hero-wrapper {
+  display: flex;             /* Met les éléments côte à côte */
+  align-items: center;       /* Centre verticalement l'image par rapport au texte */
+  justify-content: space-between; /* Écarte le texte à gauche et l'image à droite */
+  gap: 5%;                   /* Espace entre le bloc texte et le bloc image */
+  
+  /* Optionnel : pour limiter la largeur sur les très grands écrans */
+  max-width: 1400px;
+  margin: 0 auto 50px auto; /* Centre le bloc sur la page */
+  padding: 20px;
+}
+
+/* 2. La Colonne de Gauche (Texte) */
+.hero-content-left {
+  flex: 1 1 55%;            /* Prend environ 55% de la largeur, peut rétrécir/grandir */
+  padding-right: 20px;      /* Petite marge de sécurité à droite */
+}
+
+/* 3. La Colonne de Droite (Conteneur de l'image) */
+.hero-image-right {
+  flex: 0 0 40%;            /* Force la largeur à 40%. Ne grandit pas, ne rétrécit pas. */
+  display: flex;
+  justify-content: flex-end; /* Pousse l'image vers la droite de son conteneur */
+}
+
+/* 4. L'image elle-même */
+.hero-image-right img {
+  width: 100%;              /* L'image prend toute la largeur de son conteneur (les 40%) */
+  max-width: 450px;         /* Taille maximale pour éviter qu'elle soit géante */
+  height: auto;             /* Garde les proportions */
+  border-radius: 16px;      /* Optionnel : coins arrondis pour le style premium */
+  object-fit: cover;
+}
+
+/* --- RESPONSIVE --- */
+/* Sur tablette et mobile, on empile à nouveau pour que ce soit lisible */
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column; /* On empile verticalement */
+    text-align: center;     /* On centre le texte */
+    gap: 40px;
+  }
+
+  .hero-content-left,
+  .hero-image-right {
+    flex: auto;            /* On réinitialise les largeurs */
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero-image-right {
+    justify-content: center; /* Centre l'image sur mobile */
+  }
+}
