@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Grace Douré</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span><span>Grace Douré</span></a
+        >
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="projects.html">Projets</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn primary" href="projects.html">Voir mes projets</a>
+          <button class="icon-btn" data-nav-toggle aria-label="Ouvrir le menu">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-panel">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn primary" style="margin-top: 10px" href="projects.html"
+          >Voir mes projets</a
+        >
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container reveal">
+        <div class="kicker">Contact</div>
+        <h1 class="h2" style="margin-top: 10px">Travaillons ensemble</h1>
+        <p class="p">
+          Pour une alternance UI/UX / Product Design ou une collaboration,
+          contacte-moi ici.
+        </p>
+
+        <div class="contact-grid" style="margin-top: 22px">
+          <div class="panel">
+            <div class="kicker">Infos</div>
+            <p class="small">📍 Paris / IDF</p>
+            <p class="small">
+              🗓️ Alternance : 1 jour école / semaine (mercredi)
+            </p>
+            <p class="small">🧰 Figma • Webflow • Framer • HTML/CSS/JS</p>
+
+            <div class="divider"></div>
+
+            <p class="small">Ajoute tes liens :</p>
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                margin-top: 10px;
+              "
+            >
+              <a class="btn" href="#" target="_blank" rel="noreferrer"
+                >LinkedIn</a
+              >
+              <a class="btn" href="#" target="_blank" rel="noreferrer"
+                >GitHub</a
+              >
+              <a class="btn primary" href="mailto:tonmail@example.com">Email</a>
+            </div>
+
+            <p class="help">
+              Astuce : remplace
+              <span class="mono">tonmail@example.com</span> par ton vrai email.
+            </p>
+          </div>
+
+          <form
+            class="panel"
+            action="mailto:tonmail@example.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="kicker">Message</div>
+
+            <div class="form-row" style="margin-top: 12px">
+              <div class="field">
+                <label for="name">Nom</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Votre nom"
+                  required
+                />
+              </div>
+
+              <div class="form-row two">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="vous@exemple.com"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="subject">Objet</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Alternance / projet / échange"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bonjour Grace, ..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">Envoyer</button>
+              <p class="help">
+                Si tu veux un vrai formulaire pro, je te mets une version
+                Formspree/Netlify Forms après.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Grace Douré — Contact</div>
+        <div class="social">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 9v12M6 6.5v.3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10 21v-7a4 4 0 0 1 7.5-2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.5 21v-7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" />
+              <path
+                d="m4 8 8 6 8-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
