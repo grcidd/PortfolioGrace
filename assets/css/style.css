@@ -610,3 +610,40 @@ input:focus, textarea:focus{border-color: rgba(214,184,172,.55)}
     justify-content: center; /* Centre l'image sur mobile */
   }
 }
+
+
+/* =========================================
+   FIX: images collées aux bords (mobile + ordi)
+   À coller tout en bas du style.css
+========================================= */
+
+/* 1) on force une marge intérieure sur la page projet */
+main.section{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* 2) sur petit écran, un peu moins */
+@media (max-width: 920px){
+  main.section{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* en mobile : 1 colonne pour éviter l’effet collé */
+  .shot{ grid-column: span 12; }
+}
+
+/* 3) sécurité anti-débordement */
+.cover-wide,
+.gallery,
+.shot{
+  max-width: 100%;
+}
+
+.shot img,
+.cover-wide img{
+  width: 100%;
+  height: auto;
+  display: block;
+}

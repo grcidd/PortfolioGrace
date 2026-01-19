@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Glowtime — Application B2C de réservation de services beauté</title>
+    <title>Glowtime — Case Study</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -48,13 +48,15 @@
         <div class="breadcrumb">
           <a href="projects.html">Projets</a> / <span>Glowtime</span>
         </div>
-        <h1 class="h2" style="margin-top: 10px">Glowtime — Application B2C de réservation de services beauté</h1>
+        <h1 class="h2" style="margin-top: 10px">
+          Glowtime — Application B2C de réservation de services beauté
+        </h1>
         <p class="p">
           Glowtime — Application beauté B2C orientée expérience utilisateur
         </p>
 
         <div class="cover-wide">
-          <img src="/assets/img/1.png" alt="Huda cover" />
+          <img src="/assets/img/1.png" alt="Glowtime cover" />
         </div>
 
         <div class="two-col">
@@ -62,9 +64,8 @@
             <div class="kicker">Contexte</div>
             <p class="small">
               Glowtime est une application B2C conçue pour permettre aux clientes de découvrir, comparer et réserver facilement des services beauté, à travers une expérience digitale simple, fluide et premium.
-              Le projet met l’accent sur un parcours utilisateur intuitif, depuis la recherche du service jusqu’à la confirmation de réservation, en réduisant les frictions et en valorisant les professionnels à travers une interface élégante et lisible.
+Le projet met l’accent sur un parcours utilisateur intuitif, depuis la recherche du service jusqu’à la confirmation de réservation, en réduisant les frictions et en valorisant les professionnels à travers une interface élégante et lisible.
             </p>
-
 
             <div class="kicker" style="margin-top: 14px">Objectif</div>
             <ul class="list">
@@ -77,21 +78,28 @@
           <aside class="panel">
             <div class="kicker">Rôle & Outils</div>
             <ul class="list">
+              <li><strong>Rôle :</strong> UI/UX Designer (end-to-end)</li>
               <li>
-                <strong>Rôle :</strong> UI/UX Designer (end-to-end)
+                <strong>Outils :</strong> Figma, prototypage, Canva, Claude, UI
+                kit
               </li>
-              <li><strong>Outils :</strong> Figma, prototypage, Canva, Claude, UI
-                kit Wireframing</li>
-              <li><strong>Livrables :</strong> Wireframes ·user flow, maquettes, prototype</li>
+              <li>
+                <strong>Livrables :</strong> user flow, maquettes, prototype
+              </li>
             </ul>
+
+            <div class="kicker" style="margin-top: 14px">Points forts</div>
+            <p class="small">
+              Design system léger, composants réutilisables, parcours
+              mobile-first.
+            </p>
           </aside>
         </div>
 
-        <div class="divider"></div>
+        <!--<div class="divider"></div>
 
         <section style="margin-top: 22px" class="reveal">
           <div class="kicker">Aperçus</div>
-          
           <h2 class="h2" style="margin-top: 10px">UI & écrans</h2>
 
           <div class="gallery">
@@ -105,23 +113,24 @@
               <img src="/assets/img/mockup3.png" alt="Screen 3" />
             </div>
             <div class="shot">
-              <img src="/assets/img/mockup4.png" alt="Screen 4" />
+              <img
+                src="/assets/img/mockup4.png"
+                alt="Screen 4"
+              />
             </div>
           </div>
           <div class="shot">
             <img src="/assets/img/mockup5.png" alt="Screen 5" />
           </div>
           <div class="shot">
-            <img src="/assets/img/mockup6.png" alt="Screen 6" />
+            <img
+              src="/assets/img/mockup6.png"
+              alt="Screen 2"
+            />
           </div>
           <div class="shot">
-            <img src="/assets/img/mockup7.png" alt="Screen 7" />
-          </div>
-          
-          </div
-            style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap"
-          >
-
+            <img src="/assets/img/mockup7.png" alt="Screen 2" />
+          </div> --->
 
           <!-- ===== Behance-style Screens ---->
           <section class="behance reveal" style="margin-top: 22px">
@@ -146,7 +155,13 @@
                 />
               </figure>
 
-              
+              <!-- 4 ---> (option : image double) 
+              <div class="behance-duo">
+                <figure class="behance-shot">
+                  <img
+                    src="/assets/img/4.png"
+                    alt="Glowtime - Confirmation"
+                  />
 
                 <figure class="behance-shot">
                   <img
@@ -206,44 +221,35 @@
                     <img src="/assets/img/18.png" alt="Glowtime - Home" />
                   </figure>
 
-                  </div
-            style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap"
-          >
 
-
-
-
-
-
-
-
-
-
-
-          <h2 class="h2" style="margin-top: 10px">Prototype Figma</h2>
-
-          <div class="gallery">
-            <div class="shot">
-              <img src="/assets/img/glowtime prototype.png" alt="Screen 1" />
+                  <figcaption>
+                    Profil — infos & préférences utilisateur
+                  </figcaption>
+                </figure>
+              </div>
             </div>
- 
-          </div>
-          </div
+
+            <div class="behance-cta">
+              <a class="btn primary" href="projects.html">Retour à la liste</a>
+              <a class="btn" href="contact.html">Me contacter</a>
+            </div>
+          </section>
+
+          <div
             style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap"
           >
-
             <a class="btn primary" href="projects.html">Retour à la liste</a>
             <a class="btn" href="contact.html">Me contacter</a>
-          
+          </div>
         </section>
       </div>
     </main>
 
     <footer class="footer">
       <div class="footer-inner">
-        <div>© <span id="y"></span> Grace Douré — Glowtime</div>
+        <div>© <span id="y"></span> Grace Douré — Lunéa</div>
         <div class="social">
-          <a href="https://www.linkedin.com/in/grace-dd/" aria-label="LinkedIn">
+          <a href="#" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="none">
               <path
                 d="M6 9v12M6 6.5v.3"
@@ -265,7 +271,7 @@
               />
             </svg>
           </a>
-          <a href="grcidd25@gmail.com" aria-label="Email">
+          <a href="#" aria-label="Email">
             <svg viewBox="0 0 24 24" fill="none">
               <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" />
               <path
@@ -286,3 +292,4 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
