@@ -24,3 +24,12 @@ const io = new IntersectionObserver(
 );
 
 els.forEach((el) => io.observe(el));
+
+// ===== NAV mobile toggle =====
+(function () {
+  const nav = document.querySelector(".nav");
+  const btn = document.querySelector("[data-nav-toggle]");
+  if (!nav || !btn) return;
+
+  btn.addEventListener("click", () => nav.classList.toggle("open"));
+})();
