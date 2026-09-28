@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rezty — Grace Douré</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span><span>Grace Douré</span></a
+        >
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="projects.html">Projets</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn primary" href="projects.html">Retour projets</a>
+          <button class="icon-btn" data-nav-toggle aria-label="Ouvrir le menu">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-panel">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn primary" style="margin-top: 10px" href="projects.html"
+          >Retour projets</a
+        >
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container page-head reveal">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+          "
+        >
+          <span
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 72px;
+              height: 72px;
+              flex: none;
+              border: 1px solid var(--stroke);
+              border-radius: 20px;
+              background: #000000;
+            "
+          >
+            <img
+              src="/assets/img/rezty-logo.png"
+              alt="Logo Rezty"
+              style="width: 38px; height: 38px"
+            />
+          </span>
+          <span
+            style="
+              font-size: 1.15rem;
+              letter-spacing: 0.32em;
+              text-transform: uppercase;
+              color: var(--text);
+            "
+            >Rezty</span
+          >
+        </div>
+
+        <div class="breadcrumb">
+          <a href="projects.html">Projets</a> <span>— SaaS</span>
+        </div>
+        <h1 class="h2" style="margin-top: 10px">
+          Rezty — SaaS de réservation pour les indépendantes de la beauté
+        </h1>
+        <p class="p">Produit co-fondé — conception, design et développement</p>
+
+        <div class="cover-wide">
+          <img
+            src="/assets/img/rezty-onboarding.webp"
+            alt="Premiers écrans de Rezty côté cliente : lancement, bienvenue, envies, localisation"
+          />
+        </div>
+
+        <div class="two-col">
+          <section class="panel">
+            <div class="kicker">Contexte</div>
+            <p class="small">
+              Les coiffeuses, prothésistes ongulaires et esthéticiennes
+              indépendantes gèrent leur activité entre les DM Instagram, un
+              carnet papier et des rendez-vous non honorés. Les plateformes
+              existantes les traitent comme des salons : abonnement lourd,
+              vitrine standardisée, aucune prise en compte du travail à domicile
+              ou en solo. Rezty part de leur réalité — une seule personne qui
+              est à la fois prestataire, gestionnaire et marque.
+            </p>
+
+            <div class="kicker" style="margin-top: 14px">Objectif</div>
+            <ul class="list">
+              <li>
+                Remplacer le carnet et les DM par un agenda et une réservation
+                en ligne fiables
+              </li>
+              <li>
+                Réduire les rendez-vous non honorés grâce à l'acompte et aux
+                rappels automatiques
+              </li>
+              <li>
+                Donner à chaque pro une vraie vitrine à son image, sans savoir
+                coder
+              </li>
+              <li>
+                Rassembler paiements, clientèle, fidélité et marketing dans un
+                seul outil
+              </li>
+            </ul>
+          </section>
+
+          <aside class="panel">
+            <div class="kicker">Rôle & Outils</div>
+            <ul class="list">
+              <li>
+                <strong>Rôle :</strong> co-fondatrice — conception produit, UI/UX
+                et développement full-stack
+              </li>
+              <li>
+                <strong>Stack :</strong> Next.js, TypeScript, Supabase
+                (PostgreSQL, Auth, Storage), Prisma, Tailwind CSS, Stripe
+                Connect
+              </li>
+              <li>
+                <strong>Livrables :</strong> architecture produit et base de
+                données, design system, application pro & cliente, back-office,
+                site vitrine
+              </li>
+              <li>
+                <strong>Statut :</strong> en bêta fermée, accès sur candidature
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="divider"></div>
+
+        <section style="margin-top: 22px" class="reveal">
+          <div class="kicker">Produit</div>
+          <h2 class="h2" style="margin-top: 10px">Ce que j'ai construit</h2>
+
+          <div class="two-col">
+            <section class="panel">
+              <div class="kicker">Côté professionnelle</div>
+              <ul class="list">
+                <li>
+                  Agenda temps réel : créneaux, temps tampon, retards propagés
+                  aux rendez-vous suivants
+                </li>
+                <li>
+                  Encaissement et acomptes via Stripe Connect, facturation et
+                  remboursements
+                </li>
+                <li>
+                  CRM : fiches clientes, allergies, segmentation, historique
+                  d'achats
+                </li>
+                <li>
+                  Fidélité, forfaits prépayés, cartes cadeaux et abonnements
+                </li>
+                <li>
+                  Constructeur de site par blocs, avec sous-domaine dédié par
+                  pro
+                </li>
+                <li>
+                  Pilotage : chiffre d'affaires, taux de remplissage, objectifs,
+                  acquisition
+                </li>
+              </ul>
+            </section>
+
+            <section class="panel">
+              <div class="kicker">Côté cliente</div>
+              <ul class="list">
+                <li>
+                  Recherche géolocalisée par prestation, disponibilité et
+                  budget
+                </li>
+                <li>
+                  Réservation en quelques écrans, avec paiement de l'acompte
+                </li>
+                <li>
+                  Recherche par photo d'inspiration : l'IA identifie la
+                  prestation et propose des pros dont le portfolio le prouve
+                </li>
+                <li>
+                  Fil de découverte alimenté par les réalisations réelles, chaque
+                  contenu directement réservable
+                </li>
+                <li>
+                  Passeport beauté : préférences et allergies partagées aux pros
+                  choisies
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="kicker" style="margin-top: 22px">Points techniques</div>
+          <ul class="list">
+            <li>
+              Aucun double-booking possible : contraintes d'exclusion
+              PostgreSQL et verrous applicatifs, vérifiés sous concurrence réelle
+            </li>
+            <li>
+              Soldes (fidélité, cartes cadeaux, forfaits) tenus en grand livre
+              immuable plutôt qu'en compteur écrasable
+            </li>
+            <li>
+              Recherche par proximité en PostGIS, disponibilité dénormalisée pour
+              rester rapide à l'échelle
+            </li>
+            <li>
+              Row Level Security sur l'ensemble des tables, export et suppression
+              de compte conformes au RGPD
+            </li>
+            <li>
+              Fonctions IA toujours ancrées sur les données réelles de la pro —
+              jamais un prix, une durée ou un créneau inventé
+            </li>
+          </ul>
+
+          <div class="kicker" style="margin-top: 26px">Aperçus — le produit</div>
+          <div class="gallery">
+            <div class="shot">
+              <img src="/assets/img/rezty-reservation.webp" alt="Parcours de réservation : choix de la prestation, créneau, acompte" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-pilotage.webp" alt="Tableau de bord et CRM côté professionnelle" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-agenda.webp" alt="Agenda en vue jour, semaine et mois" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-feed.webp" alt="Fil de découverte : chaque contenu est directement réservable" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-createur-site.webp" alt="Créateur de site : modèles, édition par blocs, mise en ligne" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-modeles-vitrine.webp" alt="Les cinq modèles de vitrine proposés aux professionnelles" />
+            </div>
+          </div>
+
+          <div class="kicker" style="margin-top: 26px">Aperçus — le design system</div>
+          <p class="small">
+            Une charte écrite avant les écrans : trois encres, deux familles
+            typographiques, trois gabarits. Chaque couleur y a une fonction
+            unique, ce qui rend les 84 écrans lisibles sans jamais les
+            décorer.
+          </p>
+          <div class="gallery">
+            <div class="shot">
+              <img src="/assets/img/rezty-charte-couleurs.webp" alt="Palette : trois encres, une couleur par fonction" />
+            </div>
+            <div class="shot">
+              <img src="/assets/img/rezty-charte-composants.webp" alt="Vocabulaire de l'interface : boutons, badges d'état, rangées" />
+            </div>
+          </div>
+
+          <div
+            style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap"
+          >
+            <a class="btn primary" href="https://rezty.app">Voir le site</a>
+            <a class="btn" href="projects.html">Retour à la liste</a>
+            <a class="btn" href="contact.html">Me contacter</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Grace Douré — Rezty</div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/grace-dd/" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 9v12M6 6.5v.3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10 21v-7a4 4 0 0 1 7.5-2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.5 21v-7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <a href="mailto:grcidd25@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" />
+              <path
+                d="m4 8 8 6 8-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
