@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 430" width="430" height="430" role="img" aria-label="Logo Rezty">
+  <rect width="430" height="430" rx="30" fill="#000000"/>
+  <g transform="translate(125 108) scale(0.75)" fill="none" stroke="#F7F6EB" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M78 48 L190 160"/>
+    <path d="M78 48 H148 A42 42 0 0 1 158 128"/>
+    <path d="M62 92 L132 162"/>
+    <path d="M62 124 L114 176"/>
+    <path d="M62 156 L96 190"/>
+  </g>
+  <text x="222" y="348" text-anchor="middle" fill="#F7F6EB"
+        font-family="Arial, Helvetica, sans-serif" font-size="42" letter-spacing="12.6">REZTY</text>
+</svg>
