@@ -1056,3 +1056,35 @@ main.section{
 @media (max-width: 560px){
   .form-row.two{ grid-template-columns: 1fr; }
 }
+
+/* ====== GALERIE DE CONTENUS INSTAGRAM ======
+   Les intégrations Instagram ne lisent JAMAIS en automatique et ne bouclent
+   pas : la balise vidéo à l'intérieur de leur iframe porte autoplay=false et
+   loop=false, imposés par Instagram et inaccessibles depuis l'extérieur
+   (iframe d'une autre origine). Pour une vraie boucle infinie il faut les
+   fichiers vidéo eux-mêmes, servis depuis ce dépôt. */
+.reels{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.reel{
+  margin:0;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface);
+  /* Instagram rend la vidéo dans une zone presque carrée, surmontée d'un
+     en-tête et suivie de sa barre d'attribution : 9/11 colle au contenu réel. */
+  aspect-ratio: 9 / 11;
+}
+.reel iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+@media (max-width: 420px){
+  .reels{ grid-template-columns: 1fr; }
+}
