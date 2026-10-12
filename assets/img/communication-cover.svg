@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Communication et réseaux sociaux">
+  <defs>
+    <radialGradient id="lueur" cx="22%" cy="8%" r="78%">
+      <stop offset="0%" stop-color="#D6B8AC" stop-opacity=".22"/>
+      <stop offset="60%" stop-color="#D6B8AC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#0B0B0C"/>
+  <rect width="1600" height="900" fill="url(#lueur)"/>
+
+  <g fill="none" stroke="#D6B8AC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <rect x="148" y="300" width="124" height="124" rx="38"/>
+    <circle cx="210" cy="362" r="33"/>
+    <circle cx="249" cy="323" r="7" fill="#D6B8AC" stroke="none"/>
+  </g>
+
+  <text x="148" y="530" fill="#F3F3F4" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="600">Communication</text>
+  <text x="148" y="632" fill="#D6B8AC" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="600">&amp; réseaux sociaux</text>
+
+  <g fill="rgba(243,243,244,.72)" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="4">
+    <text x="148" y="730">ImekCare</text>
+    <text x="420" y="730">Weilness</text>
+    <text x="690" y="730">Rezty</text>
+  </g>
+  <g fill="#D6B8AC" font-family="Arial, Helvetica, sans-serif" font-size="34">
+    <text x="380" y="730">·</text>
+    <text x="652" y="730">·</text>
+  </g>
+</svg>
