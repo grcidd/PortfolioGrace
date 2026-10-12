@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rezty Admin — back-office SaaS | Grace Douré</title>
+    <meta
+      name="description"
+      content="Rezty Admin : le back-office du SaaS Rezty — rôles et permissions, fiche pro 360, support, candidatures bêta, abonnements et journal d'audit."
+    />
+    <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span><span>Grace Douré</span></a
+        >
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="projects.html">Projets</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn primary" href="projects.html">Retour projets</a>
+          <button class="icon-btn" data-nav-toggle aria-label="Ouvrir le menu">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 7h16M4 12h16M4 17h16"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container mobile-panel">
+        <a href="index.html">Accueil</a>
+        <a href="projects.html">Projets</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn primary" style="margin-top: 10px" href="projects.html"
+          >Retour projets</a
+        >
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container page-head">
+        <div class="breadcrumb">
+          <a href="projects.html">Projets</a> <span>— Back-office SaaS</span>
+        </div>
+        <h1 class="h2" style="margin-top: 10px">
+          Rezty Admin — piloter le SaaS depuis l'intérieur
+        </h1>
+        <p class="p">
+          Le back-office de Rezty : qui entre, qui paie, qui demande de l'aide.
+        </p>
+
+        <div class="cover-wide">
+          <img
+            src="/assets/img/rezty-admin-tableau-de-bord.webp"
+            alt="Tableau de bord de Rezty Admin : acquisition, comptes, support et revenu"
+          />
+        </div>
+
+        <p class="small" style="margin-top: 10px; opacity: 0.7">
+          Les captures de cette page tournent sur un jeu de données de
+          démonstration. Rezty est en bêta fermée : aucune donnée de
+          professionnelle réelle n'y figure.
+        </p>
+
+        <div class="two-col">
+          <section class="panel">
+            <div class="kicker">Le contexte</div>
+            <p class="small">
+              Rezty est le SaaS de réservation que j'ai co-fondé pour les
+              indépendantes de la beauté. Un produit qui encaisse de l'argent et
+              détient des données sensibles ne peut pas se piloter à coups de
+              requêtes SQL : il faut un endroit où l'équipe voit l'état réel du
+              service, répond aux professionnelles et agit — sans jamais pouvoir
+              faire n'importe quoi.
+            </p>
+
+            <div class="kicker" style="margin-top: 14px">Le principe</div>
+            <ul class="list">
+              <li>
+                <strong>Ne jamais afficher un chiffre qu'on ne sait pas
+                  calculer.</strong>
+                Les indicateurs sans source réelle ne sont pas inventés : ils
+                sont absents, et la page explique pourquoi.
+              </li>
+              <li>
+                <strong>Toute action sensible laisse une trace.</strong>
+                Qui, quand, depuis quelle adresse, pour quel motif, et quel
+                champ exactement a changé.
+              </li>
+              <li>
+                <strong>Les permissions se vérifient côté serveur.</strong>
+                Masquer un bouton ne protège rien : chaque action est revérifiée
+                à l'exécution.
+              </li>
+            </ul>
+          </section>
+
+          <aside class="panel">
+            <div class="kicker">En bref</div>
+            <ul class="list">
+              <li><strong>Produit :</strong> SaaS B2B, bêta fermée</li>
+              <li>
+                <strong>Rôle :</strong> co-fondatrice — conception et
+                développement
+              </li>
+              <li>
+                <strong>Stack :</strong> Next.js, TypeScript, Prisma, PostgreSQL
+                (Supabase), Stripe
+              </li>
+              <li>
+                <strong>Périmètre :</strong> 9 sections, 3 rôles d'équipe,
+                journal d'audit dédié
+              </li>
+            </ul>
+
+            <div style="margin-top: 16px">
+              <a class="btn" href="project-rezty.html"
+                >L'étude de cas produit</a
+              >
+            </div>
+          </aside>
+        </div>
+
+        <div class="divider"></div>
+
+        <section
+          class="reveal"
+          style="margin-top: 26px; scroll-margin-top: 100px"
+        >
+          <div class="kicker">01 — Comptes</div>
+          <h2 class="h2" style="margin-top: 10px">
+            Savoir qui est là, et dans quel état
+          </h2>
+          <p class="small" style="max-width: 70ch">
+            La liste des professionnelles est filtrable par spécialité, plan et
+            statut, exportable en CSV. Chaque ligne dit l'essentiel d'un coup
+            d'œil : le plan, si l'abonnement est réellement payé ou offert, si
+            la vitrine est prête à être montrée, la dernière connexion. Un clic
+            ouvre une fiche complète — profil, abonnement, activité de
+            réservation, notes internes de l'équipe.
+          </p>
+
+          <div class="gallery">
+            <div class="shot" style="grid-column: span 12">
+              <img
+                src="/assets/img/rezty-admin-pros.webp"
+                alt="Liste des professionnelles dans Rezty Admin, avec filtres et statuts"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="divider" style="margin-top: 26px"></div>
+
+        <section
+          class="reveal"
+          style="margin-top: 26px; scroll-margin-top: 100px"
+        >
+          <div class="kicker">02 — Support</div>
+          <h2 class="h2" style="margin-top: 10px">
+            Un centre d'aide, pas une boîte mail
+          </h2>
+          <p class="small" style="max-width: 70ch">
+            Chaque demande devient un ticket avec sa référence, sa priorité et
+            son statut. L'inbox trie par « le plus ancien à traiter d'abord » et
+            marque en retard tout ticket sans première réponse depuis 24 heures.
+            L'équipe peut écrire une note interne — jamais envoyée à la
+            professionnelle — et la base elle-même refuse qu'une note interne
+            soit enregistrée au nom d'une pro.
+          </p>
+
+          <div class="gallery">
+            <div class="shot" style="grid-column: span 12">
+              <img
+                src="/assets/img/rezty-admin-centre-aide.webp"
+                alt="Centre d'aide de Rezty Admin : tickets, priorités, statuts et retards"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="divider" style="margin-top: 26px"></div>
+
+        <section
+          class="reveal"
+          style="margin-top: 26px; scroll-margin-top: 100px"
+        >
+          <div class="kicker">03 — Entrée en bêta</div>
+          <h2 class="h2" style="margin-top: 10px">
+            De la candidature au compte actif
+          </h2>
+          <p class="small" style="max-width: 70ch">
+            L'inscription professionnelle est fermée : on entre sur candidature.
+            Chaque demande déposée depuis le site arrive ici avec son métier, sa
+            ville et son Instagram. L'accepter génère une invitation nominative
+            qui porte déjà le plan et les mois offerts — la personne n'a aucun
+            code à saisir, et le lien ne vaut que pour son adresse.
+          </p>
+
+          <div class="gallery">
+            <div class="shot" style="grid-column: span 12">
+              <img
+                src="/assets/img/rezty-admin-candidatures.webp"
+                alt="File des candidatures à la bêta dans Rezty Admin"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="divider" style="margin-top: 26px"></div>
+
+        <section
+          class="reveal"
+          style="margin-top: 26px; scroll-margin-top: 100px"
+        >
+          <div class="kicker">04 — Revenu</div>
+          <h2 class="h2" style="margin-top: 10px">
+            Distinguer ce qui est payé de ce qui est offert
+          </h2>
+          <p class="small" style="max-width: 70ch">
+            Un plan payant posé à la main — geste commercial, invitation
+            partenaire — n'est pas un abonnement. L'écran sépare donc les deux :
+            le revenu mensuel ne compte que les abonnements Stripe réellement
+            actifs, et chaque ligne dit d'où vient l'accès. Les blocs qu'aucune
+            donnée ne permet encore de calculer sont annoncés comme tels plutôt
+            que remplis de chiffres plausibles.
+          </p>
+
+          <div class="gallery">
+            <div class="shot" style="grid-column: span 12">
+              <img
+                src="/assets/img/rezty-admin-abonnements.webp"
+                alt="Écran Abonnements de Rezty Admin : revenu mensuel, accès payants et offerts"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="divider" style="margin-top: 26px"></div>
+
+        <section
+          class="reveal"
+          style="margin-top: 26px; scroll-margin-top: 100px"
+        >
+          <div class="kicker">05 — Garde-fous</div>
+          <h2 class="h2" style="margin-top: 10px">Ce qu'un admin ne peut pas faire</h2>
+
+          <div class="two-col">
+            <section class="panel">
+              <div class="kicker">Trois rôles, pas un seul</div>
+              <ul class="list">
+                <li>
+                  <strong>Super-admin :</strong> tout, y compris les actions
+                  sensibles
+                </li>
+                <li>
+                  <strong>Support :</strong> répond et trie les tickets, mais ne
+                  touche jamais à un abonnement
+                </li>
+                <li>
+                  <strong>Lecture seule :</strong> consulte, n'écrit nulle part
+                </li>
+              </ul>
+              <p class="small" style="margin-top: 10px">
+                Un rôle qui n'a pas le droit ne voit pas l'action grisée : elle
+                est retirée de l'écran, et le serveur la refuserait de toute
+                façon.
+              </p>
+            </section>
+
+            <aside class="panel">
+              <div class="kicker">Se mettre à la place d'une pro</div>
+              <p class="small">
+                Pour aider quelqu'un, il faut parfois voir ce qu'elle voit.
+                L'équipe peut ouvrir une session à sa place, pendant quinze
+                minutes, avec un bandeau rouge permanent qui le rappelle. Trois
+                choses restent impossibles dans cet état, vérifiées côté
+                serveur : rembourser, toucher au compte d'encaissement,
+                supprimer le compte. Et répondre à une cliente en se faisant
+                passer pour la professionnelle.
+              </p>
+              <p class="small" style="margin-top: 10px">
+                Tout est journalisé : l'identité de l'admin est figée en clair
+                au moment de l'action, avec l'adresse IP, le motif saisi et le
+                détail champ par champ de ce qui a changé.
+              </p>
+            </aside>
+          </div>
+        </section>
+
+        <div
+          style="margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap"
+        >
+          <a class="btn primary" href="project-rezty.html">L'étude de cas produit</a>
+          <a class="btn" href="projects.html">Retour à la liste</a>
+          <a class="btn" href="contact.html">Me contacter</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Grace Douré — Rezty Admin</div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/grace-dd/" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 9v12M6 6.5v.3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10 21v-7a4 4 0 0 1 7.5-2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.5 21v-7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <a href="mailto:grcidd25@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16v10H4z" stroke="currentColor" stroke-width="2" />
+              <path
+                d="m4 8 8 6 8-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
